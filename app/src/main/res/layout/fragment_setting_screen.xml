@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edbaba"
+
+    tools:context=".setting_screen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#303f9e"
+        android:gravity="center"
+        android:text="세팅"
+        android:textColor="#f7f4f4"
+        android:textSize="23dp"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="345dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="113dp"
+        android:text="개발자에게   전화문의"
+        android:textSize="18dp"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="345dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="54dp"
+        android:text="페이지 방문"
+        android:textSize="18dp"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/settingalarmclock"
+        android:layout_width="189dp"
+        android:layout_height="191dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="98dp"
+        android:src="@drawable/allarmpng_final_white" />
+
+</RelativeLayout>

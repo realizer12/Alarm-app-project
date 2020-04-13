@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarm_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/alarm_entire_container"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/alarm_item_style"
+        tools:ignore="RtlCompat">
+
+        <TextView
+            android:id="@+id/alarm_time_item"
+            android:layout_width="209dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:hint="오전  25시 00분"
+            android:text=""
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="28dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/memo_item"
+            android:layout_width="147dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:hint="메모를 입력해주세요~ "
+            android:text=""
+            android:textColor="#000"
+            android:textColorHint="#585555"
+            tools:ignore="RtlCompat" />
+
+        <Switch
+            android:id="@+id/using_alarm_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/alarm_time_item"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/textView31"
+            android:switchMinWidth="70dp"
+            android:text=""
+            android:textColor="#000"
+            android:textOff="off"
+            android:textOn="on"
+            android:thumb="@drawable/swith_thmb_selector"
+            android:track="@drawable/switch_track_selector" />
+
+        <TextView
+            android:id="@+id/alarm_data_item"
+            android:layout_width="141dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/wayfor_finish_item"
+            android:gravity="center"
+            android:hint="요일 들어감."
+            android:text=""
+            android:textColor="#000"
+            android:textColorHint="#585555"
+            android:visibility="visible"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/wayfor_finish_item"
+            android:layout_width="72dp"
+            android:layout_height="39dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:hint="종료방법"
+            android:text=""
+            android:textColor="#000"
+            android:textColorHint="#585555"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="29dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="19dp"
+            android:gravity="center"
+            android:text="on"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="29dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/using_alarm_switch"
+            android:gravity="center_vertical"
+            android:text="off"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

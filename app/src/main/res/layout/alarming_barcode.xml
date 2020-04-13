@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/finishalarming_forbarcode"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="104dp"
+        android:text="바코드 스캔하기"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/alarmingpush_for_barcode"
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:text="알람  5분 미루기"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/presenttime_for_barcode"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:hint="오전  0시  0분"
+        android:text=""
+        android:textColor="#fffcfc"
+        android:textColorHint="#fffafa"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/message_forbarcode"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="#f6f6f6"
+        android:gravity="center"
+        android:hint=""
+        android:text=""
+        android:textColor="#0d0101"
+        android:textColorHint="#000"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/barcodestuff333"
+        android:layout_width="262dp"
+        android:layout_height="205dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="187dp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barcodestuff333"
+        android:layout_centerHorizontal="true"
+        android:text="위 물건의 바코드를 찍으세요"
+        android:textSize="20dp" />
+</RelativeLayout>

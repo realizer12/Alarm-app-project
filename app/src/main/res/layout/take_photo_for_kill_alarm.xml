@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edbaba">
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="116dp"
+        android:text="바코드 찍기는 원하는 물건의 바코드를 스캔한뒤,          해당 바코드를 다시 스캔하면 해제되는 방법이다."
+        android:textColor="#060300"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_marginTop="61dp"
+        android:text="바코드 찍기 방법"
+        android:textColor="#060300"
+        android:textSize="40dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#303f9e"
+        android:gravity="center"
+        android:text="바코드 찍기"
+        android:textColor="#f7f4f4"
+        android:textSize="23dp" />
+
+    <RelativeLayout
+        android:layout_width="345dp"
+        android:layout_height="361dp"
+        android:layout_alignTop="@+id/textView47"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/frame"
+        android:padding="100dp">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/finish_to_select_photo"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="선택 완료"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="-189dp"
+        android:text="위 화면을 눌러서 사진을 설정하세요"
+        android:textColor="#000"
+        android:textSize="16dp"
+        tools:ignore="RtlCompat,UnknownId" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/takebarcodescanbtn"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:clickable="true"
+        app:backgroundTint="?android:attr/colorForegroundInverse"
+        app:elevation="0dp"
+        app:rippleColor="@android:color/background_light"
+        app:srcCompat="@drawable/white_barcode"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_marginBottom="139dp"
+        android:text="바코드번호"
+        android:textColor="#000"
+        android:textSize="23dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/barcodenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_below="@+id/textView29"
+        android:layout_marginTop="-139dp"
+        android:background="#000"
+        android:gravity="center_vertical"
+        android:hint="  스캔한 바코드번호                "
+        android:text=""
+        android:textColor="#fbf9f9"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:text="바코드 스캔은 아래 버튼을 눌러주세요"
+        android:textColor="#000"
+        android:textSize="20dp"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_marginBottom="186dp"
+        app:srcCompat="@drawable/opposite"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:text="해당 바코드 물건 사진"
+        android:textColor="#000"
+        android:textSize="23dp"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/photoforstuff"
+        android:layout_width="162dp"
+        android:layout_height="128dp"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_below="@+id/textView47"
+        android:clickable="true"
+        app:srcCompat="@drawable/waterblac"
+        tools:ignore="RtlCompat"
+
+        />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView45"
+        android:layout_below="@+id/photoforstuff"
+        android:text="위 그림을 클릭하여 실제 물건 사진을 추가하세요"
+        android:textColor="#262222"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>

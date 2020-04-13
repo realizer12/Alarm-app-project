@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/alarmingpush4"
+        android:layout_width="250dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="알람  5분 미루기"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finishalarming4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/finishalarming4"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="알람 해제하기"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <TextView
+        android:id="@+id/presenttime4"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:gravity="center"
+        android:hint="오전  0시  0분"
+        android:text=""
+        android:textColor="#fffcfc"
+        android:textColorHint="#fffafa"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/alarmclockimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message12"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <TextView
+        android:id="@+id/message4"
+        android:layout_width="339dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#f6f6f6"
+        android:gravity="center"
+        android:hint=""
+        android:text=""
+        android:textColor="#0d0101"
+        android:textColorHint="#000"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/alarmclockimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/cancemapvie_contatiner"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="164dp"
+        tools:ignore="RtlCompat">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/explainmapcancel"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/finishalarming4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="알람을 해제 하려면 위 '가야하는곳 보기'       버튼과 현재 위치 버튼을  누르며 비교하여     지정한 위치까지 가세요"
+        android:textColor="#f9f5f5"
+        android:textSize="15dp"
+        android:visibility="visible" />
+</RelativeLayout>

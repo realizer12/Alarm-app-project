@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapviewcancel">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapViewforcancel"
+        android:layout_width="match_parent"
+        android:layout_height="301dp" />
+
+    <Button
+        android:id="@+id/buttonforshowalarmmaploc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:text="가야하는 곳 보기 버튼"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="22dp"
+        android:background="#5a595b"
+        android:text="현재위치 보기 버튼 => "
+        android:textColor="#fffefe"
+        android:textSize="15dp"
+        tools:ignore="RtlCompat" />
+</RelativeLayout>

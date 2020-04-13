@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edbaba">
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#303f9e"
+        android:gravity="center"
+        android:text="알람소리 설정"
+        android:textColor="#f7f4f4"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/music_list_in_alarm_finish_button"
+        android:layout_width="256dp"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:text="선택완료"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="95dp"
+        android:text="알람 소리를  고르세요"
+        android:textColor="#000"
+        android:textSize="30dp"
+        tools:ignore="RtlCompat,UnknownId" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="305dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="172dp"
+        android:gravity="center"
+        android:text="각 알람 소리를 터치하면 소리가 들립니다.!"
+        android:textColor="#000"
+        android:textSize="17dp"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="264dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="173dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/no_music_linear"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/soundlist_style"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/music_nothing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="      알람소리 없음"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_for_no_sound"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:buttonTint="#e80a0a"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/music_from_my_machine_linear"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/soundlist_style"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="286dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="     내  mp3 파일"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_for_music_in_my_phone"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:buttonTint="#e80a0a"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:gravity="bottom"
+            android:text="기본 제공 알람음"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/siren1_linear"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/soundlist_style"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="337dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="        싸이렌 소리"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_for_siren1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:buttonTint="#e80a0a"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/siren2_linear"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/soundlist_style"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="        싸이렌 소리 2"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_for_siren2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:buttonTint="#e80a0a"
+                android:clickable="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edbaba">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:background="@drawable/frame"
+
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/알람시간"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="알람시간:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="17dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_for_showing_selected_alarm_time"
+            android:layout_width="181dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="알람시간을  선택 하세요"
+            android:text=""
+            android:textColor="#f05328"
+            android:textColorHint="#000"
+            android:textSize="16dp" />
+
+        <Space
+            android:layout_width="33dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_for_select_alarming_time"
+        android:layout_width="108dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/frame"
+        android:text="알람시간 선택"
+        android:textColor="#000"
+        tools:ignore="RtlCompat" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/frame"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/알람반복"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="알람반복:"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="26dp"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:layout_width="177dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/selected_specific_date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#f05328"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="특정 날짜 지정함"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/unselected_specific_date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:background="#9c9797"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="특정 날짜 미지정"
+                    android:textColor="#f7f0f0"
+                    android:textSize="17dp"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_for_show_specific_alarming_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:hint="지정한  알람 날짜가 들어갑니다."
+                android:textColor="#f05328"
+                android:textColorHint="#000"
+                android:textSize="15dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/linear_select_each_day_for_alarming"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Space
+                    android:layout_width="9dp"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/monday_pressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#f05328"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="월"
+                        android:textColor="#f4eeee"
+                        android:textSize="20dp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/monday_unpressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#9c9797"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="월"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/tuesday_unpressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#9c9797"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="화"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tuesday_pressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#f05328"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="화"
+                        android:textColor="#f4eeee"
+                        android:textSize="20dp"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/wednesday_pressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#f05328"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="수"
+                        android:textColor="#f4eeee"
+                        android:textSize="20dp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/wednesday_unpressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#9c9797"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="수"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/thursday_pressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#f05328"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="목"
+                        android:textColor="#f4eeee"
+                        android:textSize="20dp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/thursday_unpressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#9c9797"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="목"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/friday_pressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#f05328"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="금"
+                        android:textColor="#f4eeee"
+                        android:textSize="20dp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/friday_unpressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#9c9797"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="금"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/saturday_pressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#f05328"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="토"
+                        android:textColor="#f4eeee"
+                        android:textSize="20dp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/saturday_unpressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#9c9797"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="토"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/sunday_pressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#f05328"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="일"
+                        android:textColor="#f4eeee"
+                        android:textSize="20dp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/sunday_unpressed_text"
+                        android:layout_width="39dp"
+                        android:layout_height="44dp"
+                        android:background="#9c9797"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="일"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="273dp"
+        android:background="@drawable/frame"
+        android:orientation="horizontal"
+        tools:ignore="RtlCompat">
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="종료 방법:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_for_select_mission_to_clear_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:hint="터치하여 방법을 고르세요"
+            android:text=""
+            android:textColor="#f05328"
+            android:textColorHint="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="209dp"
+        android:background="@drawable/frame"
+        android:orientation="horizontal"
+        tools:ignore="RtlCompat">
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="알람소리:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/text_for_select_alarm_sound"
+            android:layout_width="154dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:hint="터치하여 음악을 고르세요"
+            android:text=""
+            android:textColor="#f05328"
+            android:textColorHint="#000"
+            android:textSize="13dp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="49dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/unusing_vibration_icon_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#9b9696"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/unusing_vibration_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/vibration_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/using_vibration_icon_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f05328"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/using_vibration_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/vibration_icon_white" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="147dp"
+        android:background="@drawable/frame"
+        android:orientation="horizontal"
+        tools:ignore="RtlCompat">
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="알람 미루기:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/using_alarmpush"
+                android:layout_width="145dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#f05328"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="사용함"
+                android:textColor="#000"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/unusing_alarmpush"
+                android:layout_width="158dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#9b9696"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="사용안함"
+                android:textColor="#000"
+                android:visibility="visible" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="320dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/frame"
+        android:orientation="horizontal"
+        tools:ignore="RtlCompat"
+
+        >
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="메모:"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/text_for_write_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="20"
+            android:hint="입력하고 싶은  메모를 적어주세요"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="#f05328"
+            android:textColorHint="#8d8888"
+            android:textSize="15dp" />
+
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="48dp"
+        android:text="취소"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cancel_button"
+        android:layout_marginEnd="36dp"
+        android:text="추가"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#303f9e"
+        android:gravity="center"
+        android:text="알람설정"
+        android:textColor="#f7f4f4"
+        android:textSize="23dp"
+        tools:ignore="RtlCompat" />
+
+
+</RelativeLayout>

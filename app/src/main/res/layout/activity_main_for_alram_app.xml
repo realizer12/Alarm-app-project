@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityForAlramApp"
+
+    >
+
+
+    <FrameLayout
+        android:id="@+id/frag_container_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="14"
+        android:background="@drawable/frame"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/basicalarm_entire_linear"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#aea2a2"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/basicalramframe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/basicalarm_white_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp" />
+
+                    <ImageView
+                        android:id="@+id/basicalram_white_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/allarmpng_final_white" />
+
+                    <TextView
+                        android:id="@+id/basicalram_white_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="기본알람"
+                        android:textColor="#fbf7f7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/basicalarm_black_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp" />
+
+                    <ImageView
+                        android:id="@+id/basicalram_black_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/allarmpng_final" />
+
+                    <TextView
+                        android:id="@+id/basicalram_black_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="기본알람"
+                        android:textColor="#0b0000" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mapalarm_entire_linear"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#aea2a2"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/mapalarm_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/mapalarm_black_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp" />
+
+                    <ImageView
+                        android:id="@+id/stopwatch_black_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/stopwatch_black" />
+
+                    <TextView
+                        android:id="@+id/mapalarm_black_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="스톱워치"
+                        android:textColor="#0b0000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mapalarm_white_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp" />
+
+                    <ImageView
+                        android:id="@+id/stopwatch_white_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/stopwatch_white" />
+
+                    <TextView
+                        android:id="@+id/mapalarm_white_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="스톱워치"
+                        android:textColor="#fbf7f7" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_entire_linear"
+            android:layout_width="123dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#aea2a2"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/setting_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/setting_black_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp" />
+
+                    <ImageView
+                        android:id="@+id/setting_black_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/setting_icon_final" />
+
+                    <TextView
+                        android:id="@+id/setting_black_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="세팅"
+                        android:textColor="#0b0000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/setting_white_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/setting_icon_final_white" />
+
+                    <TextView
+                        android:id="@+id/setting_white_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="세팅"
+                        android:textColor="#fbf7f7" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

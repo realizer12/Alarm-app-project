@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edbaba">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#303f9e"
+        android:gravity="center"
+        android:text="알람소리 설정"
+        android:textColor="#f7f4f4"
+        android:textSize="23dp" />
+
+    <Button
+        android:id="@+id/finiish_to_select_music_from_machine_button"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text=" 선택 완료" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/alarm_sound_recyclerview"
+        android:layout_width="336dp"
+        android:layout_height="433dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
+        android:background="#edbaba" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="287dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/alarm_sound_recyclerview"
+        android:layout_marginTop="72dp"
+        android:text="내 음악 목록"
+        android:textColor="#000"
+        android:textSize="30dp"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>

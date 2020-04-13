@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edbaba"
+
+    tools:context=".basic_alarm_screen">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#303f9e"
+        android:gravity="center"
+        android:text="기본알람"
+        android:textColor="#f7f4f4"
+        android:textSize="23dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="345dp"
+        android:layout_height="471dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/alalrm_list"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <Space
+                android:layout_width="345dp"
+                android:layout_height="13dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                tools:ignore="RtlCompat" />
+
+            <FrameLayout
+                android:layout_width="345dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/addbutton_black"
+                    android:layout_width="345dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/addbutton"
+                    android:visibility="visible" />
+
+                <ImageView
+
+                    android:id="@+id/addbutton_white"
+                    android:layout_width="345dp"
+                    android:layout_height="59dp"
+                    android:src="@drawable/addbutton_white"
+                    android:visibility="invisible" />
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="345dp"
+                android:layout_height="13dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="0dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/more_explain_text_for_alarm_list"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="     각 설정된  알람창을  '길게'  누르면
+                                삭제  또는  편집이  가능합니다. "
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
